@@ -1,5 +1,0 @@
-| Name                  | Email                  |
-| :----------------:    | :--------------------: |
-|Godfrey Hobbs          |                        |
-|Priyank Patel          |                        |
-|Ankita Verma           | ankita.verma@gatech.edu|
