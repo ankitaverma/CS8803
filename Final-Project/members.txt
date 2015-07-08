@@ -1,4 +1,4 @@
 Name                : Email
-Godfrey Hobbs
+Godfrey Hobbs        ghobbs3@gatech.edu, godfreyhobbs@gatech.edu
 Priyank Patel
 Ankita Verma         ankita.verma@gatech.edu
