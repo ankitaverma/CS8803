@@ -49,7 +49,6 @@ def unwind(data_array, add_time_step=False):
     return result
 
 # print read_input_files('/Users/godfreyhobbs/PycharmProjects/CS8803/Final-Project/Inputs/training_data.txt',True)[:200]
-first_two_hundred = read_input_files('/Users/godfreyhobbs/PycharmProjects/CS8803/Final-Project/Inputs/training_data.txt')[
-        :2000]
+first_two_hundred = read_input_files('/Users/godfreyhobbs/PycharmProjects/CS8803/Final-Project/Inputs/training_data.txt')
 
 print_data_matrix (unwind(first_two_hundred, True))
