@@ -21,7 +21,7 @@ def test(in_data):
 
 input_file = 'Inputs/training_data.txt'
 
-input_array =  np.genfromtxt(input_file, delimiter=',')
+input_array =  np.genfromtxt(input_file, delimiter=',', dtype=int)
 
 Ncount, Xcount, Ycount, negX, negY = test(input_array)
 print "Number of data points: ", Ncount
