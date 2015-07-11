@@ -16,13 +16,12 @@ def test(in_data):
     Ycount = len(allY)
     negX = sum(n < 0 for n in allX)
     negY = sum(n < 0 for n in allY)
+
     return Ncount, Xcount, Ycount, negX, negY
 
 input_file = 'Inputs/training_data.txt'
 
-reader=csv.reader(open(input_file,"rb"),delimiter=',')
-input_array = list(reader)
-
+input_array =  np.genfromtxt(input_file, delimiter=',')
 
 Ncount, Xcount, Ycount, negX, negY = test(input_array)
 print "Number of data points: ", Ncount

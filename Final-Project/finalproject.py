@@ -10,6 +10,7 @@ def read_input_files(filename, add_time_step=False):
     result = []
     with open(filename, 'rb') as csv_file:
         my_reader = csv.reader(csv_file, delimiter=' ', quotechar='|')
+        result = list(my_reader)
         for row in my_reader:
             row_data = [int(x) for x in row[0].strip().split(",")]
             if add_time_step:
@@ -49,6 +50,6 @@ def unwind(data_array, add_time_step=False):
     return result
 
 # print read_input_files('/Users/godfreyhobbs/PycharmProjects/CS8803/Final-Project/Inputs/training_data.txt',True)[:200]
-first_two_hundred = read_input_files('/Users/godfreyhobbs/PycharmProjects/CS8803/Final-Project/Inputs/training_data.txt')
+first_two_hundred = read_input_files('/Users/godfreyhobbs/PycharmProjects/CS8803/Final-Project/Inputs/training_data.txt')[:20]
 
 print_data_matrix (unwind(first_two_hundred, True))
