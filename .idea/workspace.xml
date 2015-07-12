@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23c267bd-367c-4d59-92b0-52c338f654d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Final-Project/collisions_detection.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Final-Project/cal_candle_pixels.py" afterPath="$PROJECT_DIR$/Final-Project/cal_candle_pixels.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Final-Project/resources/collision_data.cvs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Final-Project/resources/collision_data_25_degree.cvs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Final-Project/collisions_detection.py" afterPath="$PROJECT_DIR$/Final-Project/collisions_detection.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Final-Project/resources/training_data.csv" afterPath="$PROJECT_DIR$/Final-Project/resources/training_data.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Final-Project/resources/training_data_with_index.csv" afterPath="$PROJECT_DIR$/Final-Project/resources/training_data_with_index.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -22,7 +23,8 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/CS8803$validate_output.coverage" NAME="validate_output Coverage Results" MODIFIED="1436653961201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Final-Project" />
     <SUITE FILE_PATH="coverage/CS8803$finalproject.coverage" NAME="finalproject Coverage Results" MODIFIED="1436653557568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Final-Project" />
-    <SUITE FILE_PATH="coverage/CS8803$cal_candle_pixels.coverage" NAME="cal_candle_pixels Coverage Results" MODIFIED="1436731720740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Final-Project" />
+    <SUITE FILE_PATH="coverage/CS8803$collisions_detection.coverage" NAME="collisions_detection Coverage Results" MODIFIED="1436739843709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Final-Project" />
+    <SUITE FILE_PATH="coverage/CS8803$cal_candle_pixels.coverage" NAME="cal_candle_pixels Coverage Results" MODIFIED="1436732942472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Final-Project" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -33,45 +35,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="finalproject.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Final-Project/finalproject.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
-              <folding>
-                <element signature="e#48#58#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="collisions_detection.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Final-Project/collisions_detection.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="validate_output.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Final-Project/validate_output.py">
+      <file leaf-file-name="collision_data.cvs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Final-Project/resources/collision_data.cvs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-              <folding>
-                <element signature="e#19#28#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.032119915">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
             </state>
+          </provider>
+          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cal_candle_pixels.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="cal_candle_pixels.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Final-Project/cal_candle_pixels.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
               <folding>
                 <element signature="e#25#34#0" expanded="true" />
               </folding>
@@ -89,6 +80,31 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="finalproject.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Final-Project/finalproject.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="46" column="0" selection-start-line="26" selection-start-column="3" selection-end-line="46" selection-end-column="0" />
+              <folding>
+                <element signature="e#48#58#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="training_data.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Final-Project/resources/training_data.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.214286">
+              <caret line="2730" column="8" selection-start-line="2730" selection-start-column="8" selection-end-line="2730" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="fromnumeric.py" pinned="false" current-in-tab="false">
         <entry file="file:///Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/numpy/core/fromnumeric.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -102,7 +118,7 @@
       <file leaf-file-name="training_data_with_index.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Final-Project/resources/training_data_with_index.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
+            <state vertical-scroll-proportion="18773.725">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="13" />
               <folding />
             </state>
@@ -114,6 +130,16 @@
       </file>
       <file leaf-file-name="candle_data.cvs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Final-Project/resources/candle_data.cvs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="collision_data_25_degree.cvs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Final-Project/resources/collision_data_25_degree.cvs">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
@@ -149,8 +175,9 @@
         <option value="$PROJECT_DIR$/Final-Project/cal_candle_pixels" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1" />
         <option value="$PROJECT_DIR$/Final-Project/resources/candle_data.cvs" />
-        <option value="$PROJECT_DIR$/Final-Project/collisions_detection.py" />
         <option value="$PROJECT_DIR$/Final-Project/cal_candle_pixels.py" />
+        <option value="$PROJECT_DIR$/Final-Project/collisions_detection.py" />
+        <option value="$PROJECT_DIR$/Final-Project/resources/collision_data.cvs" />
       </list>
     </option>
   </component>
@@ -271,14 +298,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Final-Project" />
       <recent name="$PROJECT_DIR$/Final-Project/resources" />
+      <recent name="$PROJECT_DIR$/Final-Project" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/Final-Project/Inputs" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.cal_candle_pixels">
+  <component name="RunManager" selected="Python.collisions_detection">
     <configuration default="false" name="finalproject" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -329,6 +356,24 @@
       <module name="CS8803" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Final-Project/cal_candle_pixels.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="collisions_detection" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Final-Project" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CS8803" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Final-Project/collisions_detection.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -521,16 +566,18 @@
       <option name="USE_KEYWORD" value="false" />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python.finalproject" />
       <item index="1" class="java.lang.String" itemvalue="Python.validate_output" />
       <item index="2" class="java.lang.String" itemvalue="Python.cal_candle_pixels" />
+      <item index="3" class="java.lang.String" itemvalue="Python.collisions_detection" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Python.cal_candle_pixels" />
-        <item index="1" class="java.lang.String" itemvalue="Python.validate_output" />
-        <item index="2" class="java.lang.String" itemvalue="Python.finalproject" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python.collisions_detection" />
+        <item index="1" class="java.lang.String" itemvalue="Python.cal_candle_pixels" />
+        <item index="2" class="java.lang.String" itemvalue="Python.validate_output" />
+        <item index="3" class="java.lang.String" itemvalue="Python.finalproject" />
       </list>
     </recent_temporary>
   </component>
@@ -641,7 +688,13 @@
       <option name="project" value="LOCAL" />
       <updated>1436731790721</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="flipping x and y to match other data">
+      <created>1436732090729</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1436732090729</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -710,8 +763,13 @@
           <line>53</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/Final-Project/collisions_detection.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="10" />
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -743,31 +801,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/validate_output.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-          <folding>
-            <element signature="e#19#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Final-Project/resources/training_data_always_increasing_2000.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/resources/training_data.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3318182">
-          <caret line="15462" column="4" selection-start-line="15462" selection-start-column="0" selection-end-line="15462" selection-end-column="4" />
           <folding />
         </state>
       </provider>
@@ -791,10 +828,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Final-Project/validate_output.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35856575">
+          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+          <folding>
+            <element signature="e#19#28#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final-Project/finalproject.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="0" selection-start-line="26" selection-start-column="3" selection-end-line="46" selection-end-column="0" />
+          <folding>
+            <element signature="e#48#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Final-Project/resources/training_data_with_index.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
+        <state vertical-scroll-proportion="18773.725">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final-Project/cal_candle_pixels.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+          <folding>
+            <element signature="e#25#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final-Project/resources/training_data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.214286">
+          <caret line="2730" column="8" selection-start-line="2730" selection-start-column="8" selection-end-line="2730" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -810,32 +888,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/finalproject.py">
+    <entry file="file://$PROJECT_DIR$/Final-Project/resources/collision_data_25_degree.cvs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
-          <folding>
-            <element signature="e#48#58#0" expanded="true" />
-          </folding>
+          <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Final-Project/collisions_detection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/cal_candle_pixels.py">
+    <entry file="file://$PROJECT_DIR$/Final-Project/resources/collision_data.cvs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-          <folding>
-            <element signature="e#25#34#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.032119915">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
         </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
       </provider>
     </entry>
   </component>
