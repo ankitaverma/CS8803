@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23c267bd-367c-4d59-92b0-52c338f654d4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Final-Project/collisions_detection.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Final-Project/cal_candle_pixels.py" afterPath="$PROJECT_DIR$/Final-Project/cal_candle_pixels.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Final-Project/resources/candle_data.cvs" afterPath="$PROJECT_DIR$/Final-Project/resources/candle_data.cvs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Final-Project/resources/training_data.csv" afterPath="$PROJECT_DIR$/Final-Project/resources/training_data.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Final-Project/resources/training_data_with_index.csv" afterPath="$PROJECT_DIR$/Final-Project/resources/training_data_with_index.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -37,10 +37,20 @@
         <entry file="file://$PROJECT_DIR$/Final-Project/finalproject.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
               <folding>
                 <element signature="e#48#58#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="collisions_detection.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Final-Project/collisions_detection.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -57,13 +67,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cal_candle_pixels.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="cal_candle_pixels.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Final-Project/cal_candle_pixels.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+              <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
               <folding>
-                <element signature="e#19#28#0" expanded="true" />
+                <element signature="e#25#34#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,7 +112,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="candle_data.cvs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="candle_data.cvs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Final-Project/resources/candle_data.cvs">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
@@ -138,8 +148,9 @@
         <option value="$PROJECT_DIR$/Final-Project/validate_output.py" />
         <option value="$PROJECT_DIR$/Final-Project/cal_candle_pixels" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1" />
-        <option value="$PROJECT_DIR$/Final-Project/cal_candle_pixels.py" />
         <option value="$PROJECT_DIR$/Final-Project/resources/candle_data.cvs" />
+        <option value="$PROJECT_DIR$/Final-Project/collisions_detection.py" />
+        <option value="$PROJECT_DIR$/Final-Project/cal_candle_pixels.py" />
       </list>
     </option>
   </component>
@@ -260,6 +271,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Final-Project" />
       <recent name="$PROJECT_DIR$/Final-Project/resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -623,7 +635,13 @@
       <option name="project" value="LOCAL" />
       <updated>1436731461586</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="flipping x and y to match other data">
+      <created>1436731790721</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1436731790721</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -676,7 +694,8 @@
     <MESSAGE value="adding actual min and max&#10;    X                     Y&#10; Min.   : 240   Min.   :105  &#10; 1st Qu.: 550   1st Qu.:281  &#10; Median : 964   Median :565  &#10; Mean   : 974   Mean   :551  &#10; 3rd Qu.:1408   3rd Qu.:822  &#10; Max.   :1696   Max.   :974" />
     <MESSAGE value="code to calculate the pixels that are out of range.  In other words pixels for the candle." />
     <MESSAGE value="full candle data set in candle_data.cvs&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="full candle data set in candle_data.cvs&#10;" />
+    <MESSAGE value="flipping x and y to match other data" />
+    <option name="LAST_COMMIT_MESSAGE" value="flipping x and y to match other data" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -734,16 +753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/finalproject.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding>
-            <element signature="e#48#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Final-Project/resources/training_data_always_increasing_2000.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -793,21 +802,39 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/cal_candle_pixels.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-          <folding>
-            <element signature="e#19#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Final-Project/resources/candle_data.cvs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final-Project/finalproject.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="46" selection-start-line="24" selection-start-column="46" selection-end-line="24" selection-end-column="46" />
+          <folding>
+            <element signature="e#48#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final-Project/collisions_detection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final-Project/cal_candle_pixels.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+          <folding>
+            <element signature="e#25#34#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
