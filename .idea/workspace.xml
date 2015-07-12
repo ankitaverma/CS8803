@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23c267bd-367c-4d59-92b0-52c338f654d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Final-Project/cal_candle_pixels.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Final-Project/resources/candle_data.cvs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Final-Project/cal_candle_pixels.py" afterPath="$PROJECT_DIR$/Final-Project/cal_candle_pixels.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Final-Project/resources/candle_data.cvs" afterPath="$PROJECT_DIR$/Final-Project/resources/candle_data.cvs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Final-Project/resources/training_data.csv" afterPath="$PROJECT_DIR$/Final-Project/resources/training_data.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Final-Project/resources/training_data_with_index.csv" afterPath="$PROJECT_DIR$/Final-Project/resources/training_data_with_index.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Final-Project/validate_output.py" afterPath="$PROJECT_DIR$/Final-Project/validate_output.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CS8803.iws" />
@@ -23,7 +22,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/CS8803$validate_output.coverage" NAME="validate_output Coverage Results" MODIFIED="1436653961201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Final-Project" />
     <SUITE FILE_PATH="coverage/CS8803$finalproject.coverage" NAME="finalproject Coverage Results" MODIFIED="1436653557568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Final-Project" />
-    <SUITE FILE_PATH="coverage/CS8803$cal_candle_pixels.coverage" NAME="cal_candle_pixels Coverage Results" MODIFIED="1436665039775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Final-Project" />
+    <SUITE FILE_PATH="coverage/CS8803$cal_candle_pixels.coverage" NAME="cal_candle_pixels Coverage Results" MODIFIED="1436665620736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Final-Project" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -62,7 +61,7 @@
         <entry file="file://$PROJECT_DIR$/Final-Project/cal_candle_pixels.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="48" column="68" selection-start-line="48" selection-start-column="68" selection-end-line="48" selection-end-column="68" />
+              <caret line="48" column="93" selection-start-line="48" selection-start-column="93" selection-end-line="48" selection-end-column="93" />
               <folding>
                 <element signature="e#19#28#0" expanded="true" />
               </folding>
@@ -106,8 +105,8 @@
       <file leaf-file-name="candle_data.cvs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Final-Project/resources/candle_data.cvs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7258065">
-              <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -612,7 +611,13 @@
       <option name="project" value="LOCAL" />
       <updated>1436654028221</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="code to calculate the pixels that are out of range.  In other words pixels for the candle.">
+      <created>1436665371294</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1436665371294</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -663,7 +668,8 @@
     <MESSAGE value="adding success and failure messages" />
     <MESSAGE value="making file path relative" />
     <MESSAGE value="adding actual min and max&#10;    X                     Y&#10; Min.   : 240   Min.   :105  &#10; 1st Qu.: 550   1st Qu.:281  &#10; Median : 964   Median :565  &#10; Mean   : 974   Mean   :551  &#10; 3rd Qu.:1408   3rd Qu.:822  &#10; Max.   :1696   Max.   :974" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding actual min and max&#10;    X                     Y&#10; Min.   : 240   Min.   :105  &#10; 1st Qu.: 550   1st Qu.:281  &#10; Median : 964   Median :565  &#10; Mean   : 974   Mean   :551  &#10; 3rd Qu.:1408   3rd Qu.:822  &#10; Max.   :1696   Max.   :974" />
+    <MESSAGE value="code to calculate the pixels that are out of range.  In other words pixels for the candle." />
+    <option name="LAST_COMMIT_MESSAGE" value="code to calculate the pixels that are out of range.  In other words pixels for the candle." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -783,7 +789,7 @@
     <entry file="file://$PROJECT_DIR$/Final-Project/cal_candle_pixels.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="68" selection-start-line="48" selection-start-column="68" selection-end-line="48" selection-end-column="68" />
+          <caret line="48" column="93" selection-start-line="48" selection-start-column="93" selection-end-line="48" selection-end-column="93" />
           <folding>
             <element signature="e#19#28#0" expanded="true" />
           </folding>
@@ -792,8 +798,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Final-Project/resources/candle_data.cvs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7258065">
-          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
           <folding />
         </state>
       </provider>

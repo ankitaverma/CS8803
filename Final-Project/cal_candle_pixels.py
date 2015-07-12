@@ -46,6 +46,6 @@ pixels = cal_candle_pixels(input_array)
 print(pixels.shape)
 print(np.count_nonzero(pixels))
 # print_data_matrix(np.transpose(np.nonzero(pixels)) + [MIN_Y, MIN_X])
-print_data_matrix(np.transpose(np.nonzero(pixels)) + [MIN_Y, MIN_X])
+print_data_matrix(np.transpose(np.nonzero(pixels[200:-200,200:-200])) + [MIN_Y+200, MIN_X+200])
 
 # print_data_matrix(pixels)
