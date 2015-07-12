@@ -22,7 +22,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/CS8803$validate_output.coverage" NAME="validate_output Coverage Results" MODIFIED="1436653961201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Final-Project" />
     <SUITE FILE_PATH="coverage/CS8803$finalproject.coverage" NAME="finalproject Coverage Results" MODIFIED="1436653557568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Final-Project" />
-    <SUITE FILE_PATH="coverage/CS8803$cal_candle_pixels.coverage" NAME="cal_candle_pixels Coverage Results" MODIFIED="1436665620736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Final-Project" />
+    <SUITE FILE_PATH="coverage/CS8803$cal_candle_pixels.coverage" NAME="cal_candle_pixels Coverage Results" MODIFIED="1436731720740" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Final-Project" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -61,7 +61,7 @@
         <entry file="file://$PROJECT_DIR$/Final-Project/cal_candle_pixels.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="48" column="93" selection-start-line="48" selection-start-column="93" selection-end-line="48" selection-end-column="93" />
+              <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
               <folding>
                 <element signature="e#19#28#0" expanded="true" />
               </folding>
@@ -617,7 +617,13 @@
       <option name="project" value="LOCAL" />
       <updated>1436665371294</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="full candle data set in candle_data.cvs&#10;">
+      <created>1436731461586</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1436731461586</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -669,7 +675,8 @@
     <MESSAGE value="making file path relative" />
     <MESSAGE value="adding actual min and max&#10;    X                     Y&#10; Min.   : 240   Min.   :105  &#10; 1st Qu.: 550   1st Qu.:281  &#10; Median : 964   Median :565  &#10; Mean   : 974   Mean   :551  &#10; 3rd Qu.:1408   3rd Qu.:822  &#10; Max.   :1696   Max.   :974" />
     <MESSAGE value="code to calculate the pixels that are out of range.  In other words pixels for the candle." />
-    <option name="LAST_COMMIT_MESSAGE" value="code to calculate the pixels that are out of range.  In other words pixels for the candle." />
+    <MESSAGE value="full candle data set in candle_data.cvs&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="full candle data set in candle_data.cvs&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -681,7 +688,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/Final-Project/cal_candle_pixels.py</url>
-          <line>47</line>
+          <line>53</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
@@ -789,7 +796,7 @@
     <entry file="file://$PROJECT_DIR$/Final-Project/cal_candle_pixels.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="93" selection-start-line="48" selection-start-column="93" selection-end-line="48" selection-end-column="93" />
+          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
           <folding>
             <element signature="e#19#28#0" expanded="true" />
           </folding>

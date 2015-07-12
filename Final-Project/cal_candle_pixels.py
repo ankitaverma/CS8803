@@ -26,7 +26,13 @@ def cal_candle_pixels(data_array):
                     arena[curr_y][curr_x] = False
 
     # return arena[200:MAX_Y - 200, 200:MAX_X - 200]
+    arena = np.transpose(np.nonzero(arena[200:-200,200:-200])) + [MIN_Y+200, MIN_X+200]
+    swap_cols(arena,0,1)
     return arena
+
+
+def swap_cols(arr, frm, to):
+    arr[:,[frm, to]] = arr[:,[to, frm]]
 
 
 def print_data_matrix(data_matrix):
@@ -46,6 +52,6 @@ pixels = cal_candle_pixels(input_array)
 print(pixels.shape)
 print(np.count_nonzero(pixels))
 # print_data_matrix(np.transpose(np.nonzero(pixels)) + [MIN_Y, MIN_X])
-print_data_matrix(np.transpose(np.nonzero(pixels[200:-200,200:-200])) + [MIN_Y+200, MIN_X+200])
-
+# print_data_matrix(np.transpose(np.nonzero(pixels[200:-200,200:-200])) + [MIN_Y+200, MIN_X+200])
+print_data_matrix(pixels)
 # print_data_matrix(pixels)
