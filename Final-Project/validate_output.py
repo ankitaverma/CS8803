@@ -19,7 +19,7 @@ def test(in_data):
     badY = sum(n < 105 or n > 974 for n in allY)
 
     if Ncount == 60 and Xcount == 60 and Ycount == 60 and badX == 0 and badY == 0:
-        print "Sucess: no negative and sixty eneries"
+        print "Success: no negative and sixty eneries"
     else:
         print "FAIL: something went wrong"
         print "Number of data points: ", Ncount
