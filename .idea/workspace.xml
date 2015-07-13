@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23c267bd-367c-4d59-92b0-52c338f654d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Final-Project/resources/collision_data.cvs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Final-Project/resources/collision_data_25_degree.cvs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Final-Project/cal_candle_pixels.py" afterPath="$PROJECT_DIR$/Final-Project/cal_candle_pixels.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Final-Project/resources/candle_data.cvs" afterPath="$PROJECT_DIR$/Final-Project/resources/candle_data.cvs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Final-Project/collisions_detection.py" afterPath="$PROJECT_DIR$/Final-Project/collisions_detection.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Final-Project/resources/training_data.csv" afterPath="$PROJECT_DIR$/Final-Project/resources/training_data.csv" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Final-Project/resources/training_data_with_index.csv" afterPath="$PROJECT_DIR$/Final-Project/resources/training_data_with_index.csv" />
@@ -23,8 +23,8 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/CS8803$validate_output.coverage" NAME="validate_output Coverage Results" MODIFIED="1436653961201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Final-Project" />
     <SUITE FILE_PATH="coverage/CS8803$finalproject.coverage" NAME="finalproject Coverage Results" MODIFIED="1436653557568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Final-Project" />
-    <SUITE FILE_PATH="coverage/CS8803$collisions_detection.coverage" NAME="collisions_detection Coverage Results" MODIFIED="1436739843709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Final-Project" />
-    <SUITE FILE_PATH="coverage/CS8803$cal_candle_pixels.coverage" NAME="cal_candle_pixels Coverage Results" MODIFIED="1436732942472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Final-Project" />
+    <SUITE FILE_PATH="coverage/CS8803$collisions_detection.coverage" NAME="collisions_detection Coverage Results" MODIFIED="1436761813394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Final-Project" />
+    <SUITE FILE_PATH="coverage/CS8803$cal_candle_pixels.coverage" NAME="cal_candle_pixels Coverage Results" MODIFIED="1436765225009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Final-Project" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -39,16 +39,16 @@
         <entry file="file://$PROJECT_DIR$/Final-Project/collisions_detection.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
+              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="collision_data.cvs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="collision_data.cvs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Final-Project/resources/collision_data.cvs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.032119915">
+            <state vertical-scroll-proportion="-0.51724136">
               <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
@@ -62,7 +62,7 @@
         <entry file="file://$PROJECT_DIR$/Final-Project/cal_candle_pixels.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+              <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
               <folding>
                 <element signature="e#25#34#0" expanded="true" />
               </folding>
@@ -128,11 +128,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="candle_data.cvs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="candle_data.cvs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Final-Project/resources/candle_data.cvs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.030241935">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -174,10 +174,10 @@
         <option value="$PROJECT_DIR$/Final-Project/validate_output.py" />
         <option value="$PROJECT_DIR$/Final-Project/cal_candle_pixels" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1" />
-        <option value="$PROJECT_DIR$/Final-Project/resources/candle_data.cvs" />
-        <option value="$PROJECT_DIR$/Final-Project/cal_candle_pixels.py" />
-        <option value="$PROJECT_DIR$/Final-Project/collisions_detection.py" />
         <option value="$PROJECT_DIR$/Final-Project/resources/collision_data.cvs" />
+        <option value="$PROJECT_DIR$/Final-Project/collisions_detection.py" />
+        <option value="$PROJECT_DIR$/Final-Project/cal_candle_pixels.py" />
+        <option value="$PROJECT_DIR$/Final-Project/resources/candle_data.cvs" />
       </list>
     </option>
   </component>
@@ -305,7 +305,7 @@
       <recent name="$PROJECT_DIR$/Final-Project/Inputs" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.collisions_detection">
+  <component name="RunManager" selected="Python.cal_candle_pixels">
     <configuration default="false" name="finalproject" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -574,8 +574,8 @@
     </list>
     <recent_temporary>
       <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.collisions_detection" />
-        <item index="1" class="java.lang.String" itemvalue="Python.cal_candle_pixels" />
+        <item index="0" class="java.lang.String" itemvalue="Python.cal_candle_pixels" />
+        <item index="1" class="java.lang.String" itemvalue="Python.collisions_detection" />
         <item index="2" class="java.lang.String" itemvalue="Python.validate_output" />
         <item index="3" class="java.lang.String" itemvalue="Python.finalproject" />
       </list>
@@ -694,7 +694,13 @@
       <option name="project" value="LOCAL" />
       <updated>1436732090729</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="collision data without considering the candle">
+      <created>1436739908010</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1436739908010</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -748,7 +754,8 @@
     <MESSAGE value="code to calculate the pixels that are out of range.  In other words pixels for the candle." />
     <MESSAGE value="full candle data set in candle_data.cvs&#10;" />
     <MESSAGE value="flipping x and y to match other data" />
-    <option name="LAST_COMMIT_MESSAGE" value="flipping x and y to match other data" />
+    <MESSAGE value="collision data without considering the candle" />
+    <option name="LAST_COMMIT_MESSAGE" value="collision data without considering the candle" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -759,17 +766,12 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/Final-Project/cal_candle_pixels.py</url>
-          <line>53</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/Final-Project/collisions_detection.py</url>
-          <line>17</line>
+          <line>18</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="15" />
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -859,16 +861,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/cal_candle_pixels.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-          <folding>
-            <element signature="e#25#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Final-Project/resources/training_data.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.214286">
@@ -880,14 +872,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/resources/candle_data.cvs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Final-Project/resources/collision_data_25_degree.cvs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -896,23 +880,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/collisions_detection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="8" selection-start-line="19" selection-start-column="8" selection-end-line="19" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Final-Project/resources/collision_data.cvs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.032119915">
+        <state vertical-scroll-proportion="-0.51724136">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
       <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final-Project/collisions_detection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final-Project/cal_candle_pixels.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+          <folding>
+            <element signature="e#25#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Final-Project/resources/candle_data.cvs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.030241935">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
