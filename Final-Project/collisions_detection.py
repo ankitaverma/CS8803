@@ -15,15 +15,30 @@ COLLISION_ZONE_Y_MIN = 200
 COLLISION_ZONE_Y_MAX = 880
 
 
+def distance_between(point1, point2):
+    """Computes distance between point1 and point2. Points are (x, y) pairs."""
+    x1, y1 = point1
+    x2, y2 = point2
+    return sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
+
+
 def in_zone(data_point):
     if COLLISION_ZONE_X_MIN < data_point[0] < COLLISION_ZONE_X_MAX:
         if COLLISION_ZONE_Y_MIN < data_point[1] < COLLISION_ZONE_Y_MAX:
             return False
     return True
 
-# def in_circle(data_point):
-#     # (x-h) ** 2 + (y-y) **2 = r **2
-#     if
+
+center = (1008.5, 542.5)
+collision_buffer = 60
+radius = (227 / 2)
+
+def in_circle(data_point):
+    # diameter is 227
+    # radius is 227/2
+
+    return distance_between(center, data_point) < (radius + collision_buffer)
+
 
 def angle_trunc(a):
     """This maps all angles to a domain of [-pi, pi]"""
@@ -92,7 +107,7 @@ def cal_collision_pixles(data_array):
             current_y_increasing = not current_y_increasing
             direction_change = True
 
-        if direction_change and abs(curr_heading - prev_heading) > 26 and in_zone(curr_xy):
+        if direction_change and abs(curr_heading - prev_heading) > 26 and (in_zone(curr_xy) or in_circle(curr_xy)):
             if steps_between_collisions == 1:
                 thrash += 1
             else:
@@ -108,7 +123,7 @@ def cal_collision_pixles(data_array):
         prev_y = curr_y
 
     print "max max_steps_between_collisions [", max_steps_between_collisions, "]"
-    print "max_thrash [",max_thrash,"]"
+    print "max_thrash [", max_thrash, "]"
     return result
 
 
