@@ -14,11 +14,16 @@ COLLISION_ZONE_X_MAX = 1600
 COLLISION_ZONE_Y_MIN = 200
 COLLISION_ZONE_Y_MAX = 880
 
+
 def in_zone(data_point):
     if COLLISION_ZONE_X_MIN < data_point[0] < COLLISION_ZONE_X_MAX:
         if COLLISION_ZONE_Y_MIN < data_point[1] < COLLISION_ZONE_Y_MAX:
             return False
     return True
+
+# def in_circle(data_point):
+#     # (x-h) ** 2 + (y-y) **2 = r **2
+#     if
 
 def angle_trunc(a):
     """This maps all angles to a domain of [-pi, pi]"""
@@ -68,12 +73,15 @@ def cal_collision_pixles(data_array):
     current_y_increasing = 0 < prev_y - prev_prev_y
     prev_heading = get_heading((prev_prev_x, prev_prev_y), (prev_x, prev_y))
     direction_change = False
+    steps_between_collisions = 0
+    max_steps_between_collisions = 0
+    thrash = 0
+    max_thrash = 0
     for curr_xy in data_array_values[2:]:
         direction_change = False
+        steps_between_collisions += 1
         curr_x = curr_xy[0]
         curr_y = curr_xy[1]
-        # print prev_prev_x,prev_x,curr_x
-        # print prev_prev_y,prev_y,curr_y
         curr_heading = get_heading((prev_x, prev_y), (curr_x, curr_y))
         # print get_angle((curr_x, curr_y), (prev_x, prev_y), (prev_prev_x, prev_prev_y)), \
         #     curr_heading,curr_xy
@@ -85,7 +93,13 @@ def cal_collision_pixles(data_array):
             direction_change = True
 
         if direction_change and abs(curr_heading - prev_heading) > 26 and in_zone(curr_xy):
-            # print curr_xy[0],",",curr_xy[0]
+            if steps_between_collisions == 1:
+                thrash += 1
+            else:
+                thrash = 0
+            max_thrash = max(max_thrash, thrash)
+            max_steps_between_collisions = max(steps_between_collisions, max_steps_between_collisions)
+            steps_between_collisions = 0
             result.append(curr_xy)
         prev_heading = curr_heading
         prev_prev_x = prev_x
@@ -93,6 +107,8 @@ def cal_collision_pixles(data_array):
         prev_x = curr_x
         prev_y = curr_y
 
+    print "max max_steps_between_collisions [", max_steps_between_collisions, "]"
+    print "max_thrash [",max_thrash,"]"
     return result
 
 
