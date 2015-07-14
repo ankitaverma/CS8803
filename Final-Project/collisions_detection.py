@@ -33,6 +33,7 @@ center = (1008.5, 542.5)
 collision_buffer = 60
 radius = (227 / 2)
 
+
 def in_circle(data_point):
     # diameter is 227
     # radius is 227/2
@@ -92,14 +93,17 @@ def cal_collision_pixles(data_array):
     max_steps_between_collisions = 0
     thrash = 0
     max_thrash = 0
+    # create a list of paths between each collision. used to help find collision angle
+    paths = []
+    curr_path = []
     for curr_xy in data_array_values[2:]:
         direction_change = False
+        curr_path.append(curr_xy)
         steps_between_collisions += 1
         curr_x = curr_xy[0]
         curr_y = curr_xy[1]
         curr_heading = get_heading((prev_x, prev_y), (curr_x, curr_y))
-        # print get_angle((curr_x, curr_y), (prev_x, prev_y), (prev_prev_x, prev_prev_y)), \
-        #     curr_heading,curr_xy
+
         if current_x_increasing != (0 < curr_x - prev_x):
             current_x_increasing = not current_x_increasing
             direction_change = True
@@ -112,11 +116,15 @@ def cal_collision_pixles(data_array):
                 thrash += 1
             else:
                 thrash = 0
+                paths.append(curr_path)
             max_thrash = max(max_thrash, thrash)
             max_steps_between_collisions = max(steps_between_collisions, max_steps_between_collisions)
             steps_between_collisions = 0
+            curr_path = []
             result.append(curr_xy)
         prev_heading = curr_heading
+        # print get_angle((curr_x, curr_y), (prev_x, prev_y), (prev_prev_x, prev_prev_y)), \
+        #     curr_heading,curr_xy
         prev_prev_x = prev_x
         prev_prev_y = prev_y
         prev_x = curr_x
@@ -124,14 +132,16 @@ def cal_collision_pixles(data_array):
 
     print "max max_steps_between_collisions [", max_steps_between_collisions, "]"
     print "max_thrash [", max_thrash, "]"
-    return result
+    print_data_matrix(paths)
+    return result, paths
+
 
 
 input_file = 'Inputs/training_data.txt'
 
 input_array = np.genfromtxt(input_file, delimiter=',', dtype=int)
 
-pixels = cal_collision_pixles(input_array)
+pixels,paths = cal_collision_pixles(input_array)
 print_data_matrix(pixels)
 
 
