@@ -3,7 +3,8 @@ __author__ = 'godfreyhobbs'
 
 import csv
 import numpy as np
-
+import sys
+import os
 
 def read_input_files(filename, add_time_step=False):
     result = np.genfromtxt(filename, delimiter=',', dtype=int)
@@ -46,6 +47,23 @@ def unwind(data_array, add_time_step=False):
     return result
 
 # print read_input_files('/Users/godfreyhobbs/PycharmProjects/CS8803/Final-Project/Inputs/training_data.txt',True)[:200]
-first_two_hundred = read_input_files('Inputs/training_data.txt', True)[:200]
-print_data_matrix(first_two_hundred)
+# first_two_hundred = read_input_files('Inputs/training_data.txt', True)[:200]
+# print_data_matrix(first_two_hundred)
 # print_data_matrix (unwind(first_two_hundred, True))
+
+
+def main(argv):
+    if len(argv) < 2:
+        sys.stderr.write("Usage: %s <inputFileName.txt>" % (argv[0],))
+        return 1
+
+    if not os.path.exists("inputs/%s" % argv[1]):
+        sys.stderr.write("ERROR: Inputfile inputs/%r was not found!" % (argv[1],))
+        return 1
+
+    print_data_matrix(read_input_files("inputs/%s" % argv[1]))
+
+#     run the finalproject
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv))
