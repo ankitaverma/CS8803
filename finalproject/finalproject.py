@@ -16,12 +16,50 @@ MAX_X = 1696
 FPS = 30
 NUM_SECONDS = 2
 
-#predict randomly
+COUNT_TRAINING_DATA = 36319
+DELTA_X_TRAINING_DATA = float(448830 - 780)
+DELTA_Y_TRAINING_DATA = float(400782 - 186)
+DELTA_X = DELTA_X_TRAINING_DATA / COUNT_TRAINING_DATA
+DELTA_Y = DELTA_Y_TRAINING_DATA / COUNT_TRAINING_DATA
+
+
 def predict(data_matrix):
+    result = []
+    last_location = data_matrix[-1]
+    prev_location = last_location
     num_prediction_steps = NUM_SECONDS * FPS
-    result = np.random.random((num_prediction_steps,2))* (MAX_X - MIN_X,MAX_Y - MIN_Y) + (MIN_X,MIN_Y)
+
+    prev_prev_x = data_matrix[-2][0]
+    prev_prev_y = data_matrix[-2][1]
+    prev_x = last_location[0]
+    prev_y = last_location[1]
+    current_x_increasing = 0 < prev_x - prev_prev_x
+    current_y_increasing = 0 < prev_y - prev_prev_y
+
+    while num_prediction_steps:
+        num_prediction_steps -= 1
+        x_delta = DELTA_X
+        y_delta = DELTA_Y
+        # TODO: need to figure out if this should increasing or decreasing:
+        if not current_x_increasing:
+            x_delta = -x_delta
+        if not current_y_increasing:
+            y_delta = -y_delta
+
+        curr_location = prev_location + (x_delta, y_delta)
+
+        result.append(curr_location)
+        prev_location = curr_location
+        # print 'godfrey', num_prediction_steps
+
     return result
 
+
+# predict randomly
+def predict_random(data_matrix):
+    num_prediction_steps = NUM_SECONDS * FPS
+    result = np.random.random((num_prediction_steps, 2)) * (MAX_X - MIN_X, MAX_Y - MIN_Y) + (MIN_X, MIN_Y)
+    return result
 
 
 def read_input_files(filename, add_time_step=False):
@@ -64,6 +102,7 @@ def unwind(data_array, add_time_step=False):
 
     return result
 
+
 # print read_input_files('/Users/godfreyhobbs/PycharmProjects/CS8803/Final-Project/Inputs/training_data.txt',True)[:200]
 # first_two_hundred = read_input_files('Inputs/training_data.txt', True)[:200]
 # print_data_matrix(first_two_hundred)
@@ -83,8 +122,9 @@ def main(argv):
 
     data_matrix = read_input_files(input_file_name)
     # print_data_matrix(predict(data_matrix))
+    # prediction_matrix = predict_random(data_matrix)
     prediction_matrix = predict(data_matrix)
-    np.savetxt('prediction.txt', prediction_matrix, delimiter=',',fmt='%i')
+    np.savetxt('prediction.txt', prediction_matrix, delimiter=',', fmt='%i')
 
 #     run the finalproject
 
