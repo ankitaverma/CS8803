@@ -5,6 +5,24 @@ import csv
 import numpy as np
 import sys
 import os
+# from scipy import linspace, polyval, polyfit, sqrt, stats, randn
+
+
+MIN_Y = 105
+MAX_Y = 974
+MIN_X = 240
+MAX_X = 1696
+
+FPS = 30
+NUM_SECONDS = 2
+
+#predict randomly
+def predict(data_matrix):
+    num_prediction_steps = NUM_SECONDS * FPS
+    result = np.random.random((num_prediction_steps,2))* (MAX_X - MIN_X,MAX_Y - MIN_Y) + (MIN_X,MIN_Y)
+    return result
+
+
 
 def read_input_files(filename, add_time_step=False):
     result = np.genfromtxt(filename, delimiter=',', dtype=int)
@@ -57,11 +75,16 @@ def main(argv):
         sys.stderr.write("Usage: %s <inputFileName.txt>" % (argv[0],))
         return 1
 
-    if not os.path.exists("inputs/%s" % argv[1]):
-        sys.stderr.write("ERROR: Inputfile inputs/%r was not found!" % (argv[1],))
+    # input_file_name = "inputs/%s" % argv[1]
+    input_file_name = "%s" % argv[1]
+    if not os.path.exists(input_file_name):
+        sys.stderr.write("ERROR: Inputfile %r was not found!" % (input_file_name,))
         return 1
 
-    print_data_matrix(read_input_files("inputs/%s" % argv[1]))
+    data_matrix = read_input_files(input_file_name)
+    # print_data_matrix(predict(data_matrix))
+    prediction_matrix = predict(data_matrix)
+    np.savetxt('prediction.txt', prediction_matrix, delimiter=',',fmt='%i')
 
 #     run the finalproject
 
