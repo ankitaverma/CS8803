@@ -1,12 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="23c267bd-367c-4d59-92b0-52c338f654d4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Final-Project/resources/angle_data.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Final-Project/resources/cal_collision_angle.py" afterPath="$PROJECT_DIR$/Final-Project/cal_collision_angle.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Final-Project/collisions_detection.py" afterPath="$PROJECT_DIR$/Final-Project/collisions_detection.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Final-Project/resources/training_data.csv" afterPath="$PROJECT_DIR$/Final-Project/resources/training_data.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Final-Project/resources/training_data_with_index.csv" afterPath="$PROJECT_DIR$/Final-Project/resources/training_data_with_index.csv" />
+    <list default="true" id="23c267bd-367c-4d59-92b0-52c338f654d4" name="Default" comment="adding path calculation">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/finalproject/grading.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Final-Project/Inputs/input.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Final-Project/Inputs/test01.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Final-Project/Inputs/test02.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Final-Project/Inputs/test03.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Final-Project/Inputs/test04.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Final-Project/Inputs/test05.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Final-Project/Inputs/test06.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Final-Project/Inputs/test07.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Final-Project/Inputs/test08.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Final-Project/Inputs/test09.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Final-Project/Inputs/test10.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Final-Project/Inputs/training_data.txt" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Final-Project/Inputs/input.txt" afterPath="$PROJECT_DIR$/finalproject/Inputs/input.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Final-Project/Inputs/test01.txt" afterPath="$PROJECT_DIR$/finalproject/Inputs/test01.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Final-Project/Inputs/test02.txt" afterPath="$PROJECT_DIR$/finalproject/Inputs/test02.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Final-Project/Inputs/test03.txt" afterPath="$PROJECT_DIR$/finalproject/Inputs/test03.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Final-Project/Inputs/test04.txt" afterPath="$PROJECT_DIR$/finalproject/Inputs/test04.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Final-Project/Inputs/test05.txt" afterPath="$PROJECT_DIR$/finalproject/Inputs/test05.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Final-Project/Inputs/test06.txt" afterPath="$PROJECT_DIR$/finalproject/Inputs/test06.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Final-Project/Inputs/test07.txt" afterPath="$PROJECT_DIR$/finalproject/Inputs/test07.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Final-Project/Inputs/test08.txt" afterPath="$PROJECT_DIR$/finalproject/Inputs/test08.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Final-Project/Inputs/test09.txt" afterPath="$PROJECT_DIR$/finalproject/Inputs/test09.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Final-Project/Inputs/test10.txt" afterPath="$PROJECT_DIR$/finalproject/Inputs/test10.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Final-Project/Inputs/training_data.txt" afterPath="$PROJECT_DIR$/finalproject/Inputs/training_data.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Final-Project/cal_candle_pixels.py" afterPath="$PROJECT_DIR$/finalproject/cal_candle_pixels.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Final-Project/cal_collision_angle.py" afterPath="$PROJECT_DIR$/finalproject/cal_collision_angle.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Final-Project/collisions_detection.py" afterPath="$PROJECT_DIR$/finalproject/collisions_detection.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Final-Project/finalproject.py" afterPath="$PROJECT_DIR$/finalproject/finalproject.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Final-Project/members.txt" afterPath="$PROJECT_DIR$/finalproject/members.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Final-Project/readme.txt" afterPath="$PROJECT_DIR$/finalproject/readme.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Final-Project/report.md" afterPath="$PROJECT_DIR$/finalproject/report.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Final-Project/resources/angle_data.csv" afterPath="$PROJECT_DIR$/finalproject/resources/angle_data.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Final-Project/resources/candle_data.csv" afterPath="$PROJECT_DIR$/finalproject/resources/candle_data.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Final-Project/resources/collision_data.csv" afterPath="$PROJECT_DIR$/finalproject/resources/collision_data.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Final-Project/resources/collision_data_25_degree.cvs" afterPath="$PROJECT_DIR$/finalproject/resources/collision_data_25_degree.cvs" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Final-Project/resources/collision_data_no_candle.csv" afterPath="$PROJECT_DIR$/finalproject/resources/collision_data_no_candle.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Final-Project/resources/training_data.csv" afterPath="$PROJECT_DIR$/finalproject/resources/training_data.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Final-Project/resources/training_data_always_increasing.csv" afterPath="$PROJECT_DIR$/finalproject/resources/training_data_always_increasing.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Final-Project/resources/training_data_always_increasing_2000.csv" afterPath="$PROJECT_DIR$/finalproject/resources/training_data_always_increasing_2000.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Final-Project/resources/training_data_with_index.csv" afterPath="$PROJECT_DIR$/finalproject/resources/training_data_with_index.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Final-Project/split_L2Error.py" afterPath="$PROJECT_DIR$/finalproject/split_L2Error.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Final-Project/validate_output.py" afterPath="$PROJECT_DIR$/finalproject/validate_output.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CS8803.iws" />
@@ -21,11 +59,14 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/CS8803$split_L2Error.coverage" NAME="split_L2Error Coverage Results" MODIFIED="1437450173521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Final-Project" />
     <SUITE FILE_PATH="coverage/CS8803$cal_collision_angle.coverage" NAME="cal_collision_angle Coverage Results" MODIFIED="1437253614498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Final-Project" />
     <SUITE FILE_PATH="coverage/CS8803$validate_output.coverage" NAME="validate_output Coverage Results" MODIFIED="1436653961201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Final-Project" />
     <SUITE FILE_PATH="coverage/CS8803$finalproject.coverage" NAME="finalproject Coverage Results" MODIFIED="1436653557568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Final-Project" />
     <SUITE FILE_PATH="coverage/CS8803$collisions_detection.coverage" NAME="collisions_detection Coverage Results" MODIFIED="1436889054454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Final-Project" />
+    <SUITE FILE_PATH="coverage/CS8803$grading__1_.coverage" NAME="grading (1) Coverage Results" MODIFIED="1437450944040" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/finalproject" />
     <SUITE FILE_PATH="coverage/CS8803$cal_candle_pixels.coverage" NAME="cal_candle_pixels Coverage Results" MODIFIED="1436765225009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Final-Project" />
+    <SUITE FILE_PATH="coverage/CS8803$grading.coverage" NAME="grading Coverage Results" MODIFIED="1437450860799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Final-Project" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -37,7 +78,7 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="cal_collision_angle.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Final-Project/cal_collision_angle.py">
+        <entry file="file://$PROJECT_DIR$/finalproject/cal_collision_angle.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
@@ -49,7 +90,7 @@
         </entry>
       </file>
       <file leaf-file-name="angle_data.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Final-Project/resources/angle_data.csv">
+        <entry file="file://$PROJECT_DIR$/finalproject/resources/angle_data.csv">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-0.0">
               <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
@@ -62,7 +103,7 @@
         </entry>
       </file>
       <file leaf-file-name="training_data.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Final-Project/Inputs/training_data.txt">
+        <entry file="file://$PROJECT_DIR$/finalproject/Inputs/training_data.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-11.910714">
               <caret line="7235" column="0" selection-start-line="7195" selection-start-column="0" selection-end-line="7235" selection-end-column="0" />
@@ -75,19 +116,19 @@
         </entry>
       </file>
       <file leaf-file-name="collisions_detection.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Final-Project/collisions_detection.py">
+        <entry file="file://$PROJECT_DIR$/finalproject/collisions_detection.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
               <folding>
-                <element signature="e#25#34#0" expanded="true" />
+                <element signature="e#29#38#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="collision_data.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Final-Project/resources/collision_data.csv">
+        <entry file="file://$PROJECT_DIR$/finalproject/resources/collision_data.csv">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
@@ -99,36 +140,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="collision_data_no_candle.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Final-Project/resources/collision_data_no_candle.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="8" selection-start-line="0" selection-start-column="0" selection-end-line="4372" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="cal_candle_pixels.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Final-Project/cal_candle_pixels.py">
+        <entry file="file://$PROJECT_DIR$/finalproject/cal_candle_pixels.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+              <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
               <folding>
-                <element signature="e#25#34#0" expanded="true" />
+                <element signature="e#29#38#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="finalproject.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Final-Project/finalproject.py">
+      <file leaf-file-name="finalproject.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/finalproject/finalproject.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7808765">
-              <caret line="46" column="0" selection-start-line="26" selection-start-column="3" selection-end-line="46" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="43" column="10" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="10" />
               <folding>
                 <element signature="e#48#58#0" expanded="true" />
               </folding>
@@ -136,24 +164,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="candle_data.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Final-Project/resources/candle_data.csv">
+      <file leaf-file-name="split_L2Error.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/finalproject/split_L2Error.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="18" column="8" selection-start-line="0" selection-start-column="0" selection-end-line="33612" selection-end-column="0" />
-              <folding />
+              <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+              <folding>
+                <element signature="e#23#41#0" expanded="true" />
+              </folding>
             </state>
-          </provider>
-          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="collision_data_25_degree.cvs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Final-Project/resources/collision_data_25_degree.cvs">
+      <file leaf-file-name="grading.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/finalproject/grading.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.54435486">
+              <caret line="18" column="19" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="candle_data.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/finalproject/resources/candle_data.csv">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
+              <caret line="18" column="8" selection-start-line="0" selection-start-column="0" selection-end-line="33612" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -185,19 +222,22 @@
         <option value="$PROJECT_DIR$/Final-Project/resources/training_data_always_increasing.csv" />
         <option value="$PROJECT_DIR$/Final-Project/Inputs/training_data.txt" />
         <option value="$PROJECT_DIR$/Final-Project/finalproject.py" />
-        <option value="$PROJECT_DIR$/Final-Project/validate_output.py" />
         <option value="$PROJECT_DIR$/Final-Project/cal_candle_pixels" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_1" />
         <option value="$PROJECT_DIR$/Final-Project/resources/collision_data.cvs" />
-        <option value="$PROJECT_DIR$/Final-Project/cal_candle_pixels.py" />
         <option value="$PROJECT_DIR$/Final-Project/resources/candle_data.cvs" />
         <option value="$PROJECT_DIR$/Final-Project/resources/collision_data_no_candle.csv" />
         <option value="$PROJECT_DIR$/Final-Project/resources/candle_data.csv" />
         <option value="$PROJECT_DIR$/Final-Project/resources/collision_data.csv" />
         <option value="$PROJECT_DIR$/Final-Project/resources/cal_collision_angle.py" />
-        <option value="$PROJECT_DIR$/Final-Project/collisions_detection.py" />
         <option value="$PROJECT_DIR$/Final-Project/cal_collision_angle.py" />
         <option value="$PROJECT_DIR$/Final-Project/resources/angle_data.csv" />
+        <option value="$PROJECT_DIR$/Final-Project/test.py" />
+        <option value="$PROJECT_DIR$/Final-Project/collisions_detection.py" />
+        <option value="$PROJECT_DIR$/Final-Project/validate_output.py" />
+        <option value="$PROJECT_DIR$/Final-Project/cal_candle_pixels.py" />
+        <option value="$PROJECT_DIR$/Final-Project/split_L2Error.py" />
+        <option value="$PROJECT_DIR$/Final-Project/grading.py" />
       </list>
     </option>
   </component>
@@ -265,7 +305,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Final-Project" />
+              <option name="myItemId" value="finalproject" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -279,7 +319,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Final-Project" />
+              <option name="myItemId" value="finalproject" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -297,7 +337,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Final-Project" />
+              <option name="myItemId" value="finalproject" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -315,7 +355,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Final-Project" />
+              <option name="myItemId" value="finalproject" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -332,7 +372,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
-    <property name="com.intellij.ide.scratch.NewScratchFileAction" value="TEXT" />
+    <property name="com.intellij.ide.scratch.NewScratchFileAction" value="Python&#10;TEXT" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -344,61 +384,7 @@
       <recent name="$PROJECT_DIR$/Final-Project/Inputs" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.cal_collision_angle">
-    <configuration default="false" name="finalproject" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Final-Project" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="CS8803" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Final-Project/finalproject.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="validate_output" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Final-Project" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="CS8803" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Final-Project/validate_output.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="cal_candle_pixels" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Final-Project" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="CS8803" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Final-Project/cal_candle_pixels.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.grading (1)">
     <configuration default="false" name="collisions_detection" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -431,6 +417,60 @@
       <module name="CS8803" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Final-Project/cal_collision_angle.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="split_L2Error" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Final-Project" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CS8803" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Final-Project/split_L2Error.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="grading" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Final-Project" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CS8803" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Final-Project/grading.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="grading (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/finalproject" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="CS8803" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/finalproject/grading.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -624,19 +664,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.finalproject" />
-      <item index="1" class="java.lang.String" itemvalue="Python.validate_output" />
-      <item index="2" class="java.lang.String" itemvalue="Python.cal_candle_pixels" />
-      <item index="3" class="java.lang.String" itemvalue="Python.collisions_detection" />
-      <item index="4" class="java.lang.String" itemvalue="Python.cal_collision_angle" />
+      <item index="0" class="java.lang.String" itemvalue="Python.collisions_detection" />
+      <item index="1" class="java.lang.String" itemvalue="Python.cal_collision_angle" />
+      <item index="2" class="java.lang.String" itemvalue="Python.split_L2Error" />
+      <item index="3" class="java.lang.String" itemvalue="Python.grading" />
+      <item index="4" class="java.lang.String" itemvalue="Python.grading (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.cal_collision_angle" />
-        <item index="1" class="java.lang.String" itemvalue="Python.collisions_detection" />
-        <item index="2" class="java.lang.String" itemvalue="Python.cal_candle_pixels" />
-        <item index="3" class="java.lang.String" itemvalue="Python.validate_output" />
-        <item index="4" class="java.lang.String" itemvalue="Python.finalproject" />
+        <item index="0" class="java.lang.String" itemvalue="Python.grading (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.grading" />
+        <item index="2" class="java.lang.String" itemvalue="Python.split_L2Error" />
+        <item index="3" class="java.lang.String" itemvalue="Python.cal_collision_angle" />
+        <item index="4" class="java.lang.String" itemvalue="Python.collisions_detection" />
       </list>
     </recent_temporary>
   </component>
@@ -783,7 +823,19 @@
       <option name="project" value="LOCAL" />
       <updated>1436889119598</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="adding path calculation">
+      <created>1437449773483</created>
+      <option name="number" value="00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1437449773483</updated>
+    </task>
+    <task id="LOCAL-00024" summary="adding path calculation">
+      <created>1437449939721</created>
+      <option name="number" value="00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1437449939722</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -791,22 +843,22 @@
     <editor active="false" />
     <layout>
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39948782" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3290653" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26086956" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39948782" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -848,22 +900,27 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/Final-Project/finalproject.py</url>
+          <url>file://$PROJECT_DIR$/finalproject/finalproject.py</url>
           <line>12</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/Final-Project/cal_collision_angle.py</url>
+          <url>file://$PROJECT_DIR$/finalproject/cal_collision_angle.py</url>
           <line>25</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/finalproject/validate_output.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="19" />
+      <option name="time" value="20" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Final-Project/cal_collision_angle.py">
+    <entry file="file://$PROJECT_DIR$/finalproject/cal_collision_angle.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
@@ -873,7 +930,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/resources/angle_data.csv">
+    <entry file="file://$PROJECT_DIR$/finalproject/resources/angle_data.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
@@ -884,17 +941,17 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/collisions_detection.py">
+    <entry file="file://$PROJECT_DIR$/finalproject/collisions_detection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
-            <element signature="e#25#34#0" expanded="true" />
+            <element signature="e#29#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/resources/collision_data.csv">
+    <entry file="file://$PROJECT_DIR$/finalproject/resources/collision_data.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
@@ -905,7 +962,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/resources/collision_data_no_candle.csv">
+    <entry file="file://$PROJECT_DIR$/finalproject/resources/collision_data_no_candle.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="8" selection-start-line="0" selection-start-column="0" selection-end-line="4372" selection-end-column="0" />
@@ -916,17 +973,17 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/cal_candle_pixels.py">
+    <entry file="file://$PROJECT_DIR$/finalproject/cal_candle_pixels.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
           <folding>
-            <element signature="e#25#34#0" expanded="true" />
+            <element signature="e#29#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/finalproject.py">
+    <entry file="file://$PROJECT_DIR$/finalproject/finalproject.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="46" column="0" selection-start-line="26" selection-start-column="3" selection-end-line="46" selection-end-column="0" />
@@ -936,7 +993,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/resources/training_data.csv">
+    <entry file="file://$PROJECT_DIR$/finalproject/resources/training_data.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2730" column="8" selection-start-line="2730" selection-start-column="8" selection-end-line="2730" selection-end-column="8" />
@@ -947,7 +1004,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/resources/candle_data.csv">
+    <entry file="file://$PROJECT_DIR$/finalproject/resources/candle_data.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="8" selection-start-line="0" selection-start-column="0" selection-end-line="33612" selection-end-column="0" />
@@ -958,7 +1015,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/resources/collision_data_25_degree.cvs">
+    <entry file="file://$PROJECT_DIR$/finalproject/resources/collision_data_25_degree.cvs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
@@ -969,7 +1026,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/cal_collision_angle.py">
+    <entry file="file://$PROJECT_DIR$/finalproject/cal_collision_angle.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
@@ -979,17 +1036,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/collisions_detection.py">
+    <entry file="file://$PROJECT_DIR$/finalproject/collisions_detection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="62" column="42" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="42" />
           <folding>
-            <element signature="e#25#34#0" expanded="true" />
+            <element signature="e#29#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/resources/collision_data.csv">
+    <entry file="file://$PROJECT_DIR$/finalproject/resources/collision_data.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
@@ -1000,7 +1057,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/resources/collision_data_no_candle.csv">
+    <entry file="file://$PROJECT_DIR$/finalproject/resources/collision_data_no_candle.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="8" selection-start-line="0" selection-start-column="0" selection-end-line="4372" selection-end-column="0" />
@@ -1011,17 +1068,17 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/cal_candle_pixels.py">
+    <entry file="file://$PROJECT_DIR$/finalproject/cal_candle_pixels.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
           <folding>
-            <element signature="e#25#34#0" expanded="true" />
+            <element signature="e#29#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/finalproject.py">
+    <entry file="file://$PROJECT_DIR$/finalproject/finalproject.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="46" column="0" selection-start-line="26" selection-start-column="3" selection-end-line="46" selection-end-column="0" />
@@ -1031,7 +1088,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/resources/training_data.csv">
+    <entry file="file://$PROJECT_DIR$/finalproject/resources/training_data.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2730" column="8" selection-start-line="2730" selection-start-column="8" selection-end-line="2730" selection-end-column="8" />
@@ -1042,17 +1099,18 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/resources/training_data_with_index.csv">
+    <entry file="file://$PROJECT_DIR$/finalproject/resources/training_data_with_index.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/resources/candle_data.csv">
+    <entry file="file://$PROJECT_DIR$/finalproject/resources/candle_data.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="8" selection-start-line="0" selection-start-column="0" selection-end-line="33612" selection-end-column="0" />
@@ -1063,7 +1121,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/resources/collision_data_25_degree.cvs">
+    <entry file="file://$PROJECT_DIR$/finalproject/resources/collision_data_25_degree.cvs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
@@ -1074,7 +1132,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/Inputs/input.txt">
+    <entry file="file://$PROJECT_DIR$/finalproject/Inputs/input.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1082,14 +1140,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/resources/training_data_always_increasing.csv">
+    <entry file="file://$PROJECT_DIR$/finalproject/resources/training_data_always_increasing.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3326613">
           <caret line="81" column="11" selection-start-line="81" selection-start-column="11" selection-end-line="81" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/resources/training_data_always_increasing_2000.csv">
+    <entry file="file://$PROJECT_DIR$/finalproject/resources/training_data_always_increasing_2000.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1114,24 +1172,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/validate_output.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35856575">
-          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/resources/training_data_with_index.csv">
+    <entry file="file://$PROJECT_DIR$/finalproject/resources/training_data_with_index.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/resources/training_data.csv">
+    <entry file="file://$PROJECT_DIR$/finalproject/resources/training_data.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2730" column="8" selection-start-line="2730" selection-start-column="8" selection-end-line="2730" selection-end-column="8" />
@@ -1142,7 +1194,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/resources/collision_data_25_degree.cvs">
+    <entry file="file://$PROJECT_DIR$/finalproject/resources/collision_data_25_degree.cvs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="3" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
@@ -1153,7 +1205,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/resources/collision_data_no_candle.csv">
+    <entry file="file://$PROJECT_DIR$/finalproject/resources/collision_data_no_candle.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="8" selection-start-line="0" selection-start-column="0" selection-end-line="4372" selection-end-column="0" />
@@ -1164,7 +1216,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/resources/candle_data.csv">
+    <entry file="file://$PROJECT_DIR$/finalproject/resources/candle_data.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="8" selection-start-line="0" selection-start-column="0" selection-end-line="33612" selection-end-column="0" />
@@ -1175,17 +1227,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/cal_candle_pixels.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
-          <folding>
-            <element signature="e#25#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/resources/collision_data.csv">
+    <entry file="file://$PROJECT_DIR$/finalproject/resources/collision_data.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
@@ -1211,27 +1253,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/collisions_detection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding>
-            <element signature="e#25#34#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/cal_collision_angle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
-          <folding>
-            <element signature="e#29#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/resources/angle_data.csv">
+    <entry file="file://$PROJECT_DIR$/finalproject/resources/angle_data.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="13" selection-start-line="0" selection-start-column="13" selection-end-line="0" selection-end-column="13" />
@@ -1242,7 +1264,7 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/Inputs/training_data.txt">
+    <entry file="file://$PROJECT_DIR$/finalproject/Inputs/training_data.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.910714">
           <caret line="7235" column="0" selection-start-line="7195" selection-start-column="0" selection-end-line="7235" selection-end-column="0" />
@@ -1253,13 +1275,79 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Final-Project/finalproject.py">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_2">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7808765">
-          <caret line="46" column="0" selection-start-line="26" selection-start-column="3" selection-end-line="46" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finalproject/finalproject.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="10" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="10" />
           <folding>
             <element signature="e#48#58#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finalproject/collisions_detection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+          <folding>
+            <element signature="e#29#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finalproject/cal_collision_angle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="26" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+          <folding>
+            <element signature="e#29#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finalproject/cal_candle_pixels.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+          <folding>
+            <element signature="e#29#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finalproject/validate_output.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7171315">
+          <caret line="36" column="0" selection-start-line="35" selection-start-column="14" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finalproject/split_L2Error.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="2" selection-start-line="22" selection-start-column="2" selection-end-line="22" selection-end-column="2" />
+          <folding>
+            <element signature="e#23#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/finalproject/grading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54435486">
+          <caret line="18" column="19" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
