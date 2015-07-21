@@ -37,7 +37,6 @@ radius = (227 / 2)
 def in_circle(data_point):
     # diameter is 227
     # radius is 227/2
-
     return distance_between(center, data_point) < (radius + collision_buffer)
 
 

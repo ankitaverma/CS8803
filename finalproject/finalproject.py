@@ -2,6 +2,7 @@
 __author__ = 'godfreyhobbs'
 
 import csv
+from math import *
 import numpy as np
 import sys
 import os
@@ -23,16 +24,46 @@ DELTA_X = DELTA_X_TRAINING_DATA / COUNT_TRAINING_DATA
 DELTA_Y = DELTA_Y_TRAINING_DATA / COUNT_TRAINING_DATA
 
 
+center = (1008.5, 542.5)
+collision_buffer = 60
+radius = (227 / 2)
+
+COLLISION_ZONE_X_MIN = 330
+COLLISION_ZONE_X_MAX = 1600
+COLLISION_ZONE_Y_MIN = 200
+COLLISION_ZONE_Y_MAX = 880
+
+
+def distance_between(point1, point2):
+    """Computes distance between point1 and point2. Points are (x, y) pairs."""
+    x1, y1 = point1
+    x2, y2 = point2
+    return sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
+
+
+def in_zone(data_point):
+    if COLLISION_ZONE_X_MIN < data_point[0] < COLLISION_ZONE_X_MAX:
+        if COLLISION_ZONE_Y_MIN < data_point[1] < COLLISION_ZONE_Y_MAX:
+            return False
+    return True
+
+
+def in_circle(data_point):
+    # diameter is 227
+    # radius is 227/2
+    return distance_between(center, data_point) < (radius + collision_buffer)
+
+
 def predict(data_matrix):
     result = []
-    last_location = data_matrix[-1]
-    prev_location = last_location
+    last_xy = data_matrix[-1]
+    prev_xy = last_xy
     num_prediction_steps = NUM_SECONDS * FPS
 
     prev_prev_x = data_matrix[-2][0]
     prev_prev_y = data_matrix[-2][1]
-    prev_x = last_location[0]
-    prev_y = last_location[1]
+    prev_x = last_xy[0]
+    prev_y = last_xy[1]
     current_x_increasing = 0 < prev_x - prev_prev_x
     current_y_increasing = 0 < prev_y - prev_prev_y
 
@@ -46,10 +77,22 @@ def predict(data_matrix):
         if not current_y_increasing:
             y_delta = -y_delta
 
-        curr_location = prev_location + (x_delta, y_delta)
+        curr_xy = prev_xy + (x_delta, y_delta)
 
-        result.append(curr_location)
-        prev_location = curr_location
+        # maybe turning too late
+        if (in_zone(curr_xy) or in_circle(curr_xy)):
+            #HACK
+            curr_xy = prev_xy
+            #HACK
+            # try change x see if we are now clear
+
+            # then try change just y and see if we are now clear
+
+            # finally change both
+
+
+        result.append(curr_xy)
+        prev_xy = curr_xy
         # print 'godfrey', num_prediction_steps
 
     return result
