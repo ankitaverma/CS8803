@@ -1,4 +1,4 @@
-author = 'ppatel'
+__author__ = 'ppatel'
 
 import re
 from math import *

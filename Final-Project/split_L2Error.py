@@ -1,4 +1,4 @@
-author = 'ppatel'
+__author__ = 'ppatel'
 
 def split(in_data):
     split80 = in_data[0:int(len(in_data)*0.8):1]

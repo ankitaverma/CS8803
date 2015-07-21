@@ -1,4 +1,4 @@
-author = 'godfreyhobbs'
+__author__ = 'godfreyhobbs'
 
 import re
 from math import *
