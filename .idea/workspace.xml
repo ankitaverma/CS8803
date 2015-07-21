@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="23c267bd-367c-4d59-92b0-52c338f654d4" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/finalproject/collisions_detection.py" afterPath="$PROJECT_DIR$/finalproject/collisions_detection.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/finalproject/finalproject.py" afterPath="$PROJECT_DIR$/finalproject/finalproject.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -20,7 +19,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/CS8803$split_L2Error.coverage" NAME="split_L2Error Coverage Results" MODIFIED="1437450173521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Final-Project" />
     <SUITE FILE_PATH="coverage/CS8803$cal_collision_angle.coverage" NAME="cal_collision_angle Coverage Results" MODIFIED="1437253614498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Final-Project" />
-    <SUITE FILE_PATH="coverage/CS8803$benchmark.coverage" NAME="benchmark Coverage Results" MODIFIED="1437496312881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/finalproject" />
+    <SUITE FILE_PATH="coverage/CS8803$benchmark.coverage" NAME="benchmark Coverage Results" MODIFIED="1437496954109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/finalproject" />
     <SUITE FILE_PATH="coverage/CS8803$validate_output.coverage" NAME="validate_output Coverage Results" MODIFIED="1436653961201" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Final-Project" />
     <SUITE FILE_PATH="coverage/CS8803$finalproject.coverage" NAME="finalproject Coverage Results" MODIFIED="1437495875794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/finalproject" />
     <SUITE FILE_PATH="coverage/CS8803$collisions_detection.coverage" NAME="collisions_detection Coverage Results" MODIFIED="1436889054454" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Final-Project" />
@@ -50,8 +49,8 @@
       <file leaf-file-name="finalproject.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/finalproject/finalproject.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.63508064">
-              <caret line="85" column="17" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.7883065">
+              <caret line="88" column="96" selection-start-line="88" selection-start-column="96" selection-end-line="88" selection-end-column="96" />
               <folding>
                 <element signature="e#48#58#0" expanded="true" />
               </folding>
@@ -784,7 +783,13 @@
       <option name="project" value="LOCAL" />
       <updated>1437495926584</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="simple movement then stopping at collision&#10;&#10;benchmark down to Average Error across 8 trials (dropped best and worst): 3375.708275&#10;&#10;">
+      <created>1437496365366</created>
+      <option name="number" value="00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1437496365366</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -800,9 +805,9 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290653" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17971015" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26086956" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26086956" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3290653" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -846,14 +851,15 @@
     <MESSAGE value="adding argv handling for grading script" />
     <MESSAGE value="running benchmark with random data.  Not avoiding the candle" />
     <MESSAGE value="simple geometric approach based on avg velocities." />
-    <option name="LAST_COMMIT_MESSAGE" value="simple geometric approach based on avg velocities." />
+    <MESSAGE value="simple movement then stopping at collision&#10;&#10;benchmark down to Average Error across 8 trials (dropped best and worst): 3375.708275&#10;&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="simple movement then stopping at collision&#10;&#10;benchmark down to Average Error across 8 trials (dropped best and worst): 3375.708275&#10;&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/finalproject/finalproject.py</url>
-          <line>112</line>
+          <line>121</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
@@ -1313,8 +1319,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/finalproject/finalproject.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.63508064">
-          <caret line="85" column="17" selection-start-line="85" selection-start-column="17" selection-end-line="85" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.7883065">
+          <caret line="88" column="96" selection-start-line="88" selection-start-column="96" selection-end-line="88" selection-end-column="96" />
           <folding>
             <element signature="e#48#58#0" expanded="true" />
           </folding>

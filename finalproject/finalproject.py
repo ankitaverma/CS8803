@@ -69,33 +69,42 @@ def predict(data_matrix):
 
     while num_prediction_steps:
         num_prediction_steps -= 1
-        x_delta = DELTA_X
-        y_delta = DELTA_Y
-        # TODO: need to figure out if this should increasing or decreasing:
-        if not current_x_increasing:
-            x_delta = -x_delta
-        if not current_y_increasing:
-            y_delta = -y_delta
-
-        curr_xy = prev_xy + (x_delta, y_delta)
+        curr_xy = get_next_step(current_y_increasing, current_x_increasing, prev_xy)
 
         # maybe turning too late
-        if (in_zone(curr_xy) or in_circle(curr_xy)):
-            #HACK
-            curr_xy = prev_xy
-            #HACK
+        if in_zone(curr_xy) or in_circle(curr_xy):
             # try change x see if we are now clear
-
-            # then try change just y and see if we are now clear
-
-            # finally change both
-
+            curr_xy = get_next_step(current_y_increasing, not current_x_increasing, prev_xy)
+            if not (in_zone(curr_xy) or in_circle(curr_xy)):
+                current_x_increasing = not current_x_increasing
+            else:
+                # then try change just y and see if we are now clear
+                curr_xy = get_next_step(not current_y_increasing, current_x_increasing, prev_xy)
+                if not (in_zone(curr_xy) or in_circle(curr_xy)):
+                    current_y_increasing = not current_y_increasing
+                else:
+                    # finally change both
+                    current_x_increasing = not current_x_increasing
+                    current_y_increasing = not current_y_increasing
+                    curr_xy = get_next_step(current_y_increasing, current_x_increasing, prev_xy)
 
         result.append(curr_xy)
         prev_xy = curr_xy
         # print 'godfrey', num_prediction_steps
 
     return result
+
+
+def get_next_step(current_y_increasing, current_x_increasing, prev_xy):
+    x_delta = DELTA_X
+    y_delta = DELTA_Y
+    # TODO: need to figure out if this should increasing or decreasing:
+    if not current_x_increasing:
+        x_delta = -x_delta
+    if not current_y_increasing:
+        y_delta = -y_delta
+    curr_xy = prev_xy + (x_delta, y_delta)
+    return curr_xy
 
 
 # predict randomly
