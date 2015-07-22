@@ -23,7 +23,6 @@ DELTA_Y_TRAINING_DATA = float(400782 - 186)
 DELTA_X = DELTA_X_TRAINING_DATA / COUNT_TRAINING_DATA
 DELTA_Y = DELTA_Y_TRAINING_DATA / COUNT_TRAINING_DATA
 
-
 center = (1008.5, 542.5)
 collision_buffer = 60
 radius = (227 / 2)
@@ -32,6 +31,22 @@ COLLISION_ZONE_X_MIN = 330
 COLLISION_ZONE_X_MAX = 1600
 COLLISION_ZONE_Y_MIN = 200
 COLLISION_ZONE_Y_MAX = 880
+
+
+def angle_trunc(a):
+    """This maps all angles to a domain of [-pi, pi]"""
+    while a < 0.0:
+        a += pi * 2
+    return ((a + pi) % (pi * 2)) - pi
+
+
+def get_heading(hunter_position, target_position):
+    """Returns the angle, in radians, between the target and hunter positions"""
+    hunter_x, hunter_y = hunter_position
+    target_x, target_y = target_position
+    heading = atan2(target_y - hunter_y, target_x - hunter_x)
+    heading = angle_trunc(heading)
+    return heading
 
 
 def distance_between(point1, point2):
@@ -69,24 +84,25 @@ def predict(data_matrix):
 
     while num_prediction_steps:
         num_prediction_steps -= 1
-        curr_xy = get_next_step(current_y_increasing, current_x_increasing, prev_xy)
+        heading = get_heading(data_matrix[-1], data_matrix[-2])
+        curr_xy = get_next_step(current_y_increasing, current_x_increasing, prev_xy, heading)
 
         # maybe turning too late
         if in_zone(curr_xy) or in_circle(curr_xy):
             # try change x see if we are now clear
-            curr_xy = get_next_step(current_y_increasing, not current_x_increasing, prev_xy)
+            curr_xy = get_next_step(current_y_increasing, not current_x_increasing, prev_xy, heading)
             if not (in_zone(curr_xy) or in_circle(curr_xy)):
                 current_x_increasing = not current_x_increasing
             else:
                 # then try change just y and see if we are now clear
-                curr_xy = get_next_step(not current_y_increasing, current_x_increasing, prev_xy)
+                curr_xy = get_next_step(not current_y_increasing, current_x_increasing, prev_xy, heading)
                 if not (in_zone(curr_xy) or in_circle(curr_xy)):
                     current_y_increasing = not current_y_increasing
                 else:
                     # finally change both
                     current_x_increasing = not current_x_increasing
                     current_y_increasing = not current_y_increasing
-                    curr_xy = get_next_step(current_y_increasing, current_x_increasing, prev_xy)
+                    curr_xy = get_next_step(current_y_increasing, current_x_increasing, prev_xy, heading)
 
         result.append(curr_xy)
         prev_xy = curr_xy
@@ -95,7 +111,7 @@ def predict(data_matrix):
     return result
 
 
-def get_next_step(current_y_increasing, current_x_increasing, prev_xy):
+def get_next_step(current_y_increasing, current_x_increasing, prev_xy, heading):
     x_delta = DELTA_X
     y_delta = DELTA_Y
     # TODO: need to figure out if this should increasing or decreasing:
@@ -103,7 +119,10 @@ def get_next_step(current_y_increasing, current_x_increasing, prev_xy):
         x_delta = -x_delta
     if not current_y_increasing:
         y_delta = -y_delta
-    curr_xy = prev_xy + (x_delta, y_delta)
+
+    heading = angle_trunc(heading)
+
+    curr_xy = prev_xy + (x_delta * cos(heading), y_delta * sin(heading))
     return curr_xy
 
 

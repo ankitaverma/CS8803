@@ -28,7 +28,7 @@ def main():
         raise Exception("Didn't find finalproject.py at {exe}".format(**vars()))
 
     errors = []
-
+    counter = 1
     for trial in [os.path.join(inputs_dir, item) for item in os.listdir(inputs_dir) if item.startswith("test")]:
         if not os.path.isfile(trial):
             continue
@@ -52,10 +52,13 @@ def main():
             raise Exception(output + " is missing!")
 
         guess = parse_data(output)
-
+        os.rename(output,  "prediction%d.txt" % counter)
         assert len(guess) == 2 * FPS
 
-        errors.append(compute_error(truth, guess))
+        curr_error = compute_error(truth, guess)
+        print("Current Error for trial %d : %f" % (len(errors), curr_error))
+        errors.append(curr_error)
+        counter += 1
 
     if len(errors) > 2:
         errors.sort()
