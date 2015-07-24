@@ -112,7 +112,7 @@ def predict(data_matrix):
         curr_xy = get_next_step(current_y_increasing, current_x_increasing, prev_xy, heading)
 
         # Turn with probability .01 when in collision zone
-        turn_dampner = .1
+        turn_dampner = .05
         if (in_zone(curr_xy) or in_circle(
                 curr_xy)) and random.random() < prob_turn:  # and random.choice([True, False]):
             # make it unlikely to do a turn immedialy follow by another turn
