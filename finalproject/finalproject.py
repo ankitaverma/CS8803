@@ -6,6 +6,7 @@ from math import *
 import numpy as np
 import sys
 import os
+import random
 # from scipy import linspace, polyval, polyfit, sqrt, stats, randn
 
 
@@ -55,6 +56,20 @@ def distance_between(point1, point2):
     x2, y2 = point2
     return sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
 
+def get_angle(p0, p1=np.array([0, 0]), p2=None):
+    ''' compute angle (in degrees) for p0p1p2 corner
+    Inputs:
+        p0,p1,p2 - points in the form of [x,y]
+    '''
+    if p2 is None:
+        p2 = p1 + np.array([1, 0])
+    v0 = np.array(p0) - np.array(p1)
+    v1 = np.array(p2) - np.array(p1)
+
+    angle = np.math.atan2(np.linalg.det([v0, v1]), np.dot(v0, v1))
+    angle = angle_trunc(angle)
+    return np.degrees(angle)
+
 
 def in_zone(data_point):
     if COLLISION_ZONE_X_MIN < data_point[0] < COLLISION_ZONE_X_MAX:
@@ -82,20 +97,24 @@ def predict(data_matrix):
     current_x_increasing = 0 < prev_x - prev_prev_x
     current_y_increasing = 0 < prev_y - prev_prev_y
 
+    #To prevent getting stuck probability of a true decrease if last move was a turn
+    prob_turn = 1.0
     while num_prediction_steps:
         num_prediction_steps -= 1
         heading = get_heading(data_matrix[-1], data_matrix[-2])
         curr_xy = get_next_step(current_y_increasing, current_x_increasing, prev_xy, heading)
 
-        # maybe turning too late
-        if in_zone(curr_xy) or in_circle(curr_xy):
+        # Turn with probability .05 when in collision zone
+        if in_zone(curr_xy) or in_circle(curr_xy) and random.random() < prob_turn:# and random.choice([True, False]):
+            #make it unlikely to do a turn immedialy follow by another turn
+            prob_turn *= .5
             # try change x see if we are now clear
-            curr_xy = get_next_step(current_y_increasing, not current_x_increasing, prev_xy, heading)
+            curr_xy = get_next_step(current_y_increasing, not current_x_increasing, prev_xy, 5/6 * pi)
             if not (in_zone(curr_xy) or in_circle(curr_xy)):
                 current_x_increasing = not current_x_increasing
             else:
                 # then try change just y and see if we are now clear
-                curr_xy = get_next_step(not current_y_increasing, current_x_increasing, prev_xy, heading)
+                curr_xy = get_next_step(not current_y_increasing, current_x_increasing, prev_xy, None)
                 if not (in_zone(curr_xy) or in_circle(curr_xy)):
                     current_y_increasing = not current_y_increasing
                 else:
@@ -103,6 +122,9 @@ def predict(data_matrix):
                     current_x_increasing = not current_x_increasing
                     current_y_increasing = not current_y_increasing
                     curr_xy = get_next_step(current_y_increasing, current_x_increasing, prev_xy, heading)
+        else:
+            # restore likihood of a turn
+            prob_turn = 1.0
 
         result.append(curr_xy)
         prev_xy = curr_xy
@@ -120,9 +142,15 @@ def get_next_step(current_y_increasing, current_x_increasing, prev_xy, heading):
     if not current_y_increasing:
         y_delta = -y_delta
 
-    heading = angle_trunc(heading)
-
-    curr_xy = prev_xy + (x_delta * cos(heading), y_delta * sin(heading))
+    if(heading):
+        heading = angle_trunc(heading)
+        # curr_xy = prev_xy + (x_delta * cos(heading), y_delta * sin(heading))
+        #based on trial and error the following produces best results
+        curr_xy = prev_xy + (x_delta * sin(heading), y_delta * cos(heading))
+    else:
+        curr_xy = prev_xy + (x_delta, y_delta)
+    # // the following allows -- 3212.063668 so maybe using heading is not great
+    #curr_xy = prev_xy + (x_delta, y_delta)
     return curr_xy
 
 
