@@ -109,6 +109,7 @@ def predict(data_matrix):
     while num_prediction_steps:
         num_prediction_steps -= 1
         heading = get_heading(data_matrix[-1], data_matrix[-2])
+        #heading = pi + -1. * get_heading(data_matrix[-2], data_matrix[-1])
         curr_xy = get_next_step(current_y_increasing, current_x_increasing, prev_xy, heading)
 
         # Turn with probability .01 when in collision zone
@@ -155,8 +156,8 @@ def get_next_step(current_y_increasing, current_x_increasing, prev_xy, heading):
 
     if (heading):
         heading = angle_trunc(heading)
-        # curr_xy = prev_xy + (x_delta * cos(heading), y_delta * sin(heading))
-        # based on trial and error the following produces best results
+        #curr_xy = prev_xy + (x_delta * cos(heading), y_delta * sin(heading))
+        # based on trial and error the following produces best results -- NOT SURE WHY?
         curr_xy = prev_xy + (x_delta * sin(heading), y_delta * cos(heading))
     else:
         curr_xy = prev_xy + (x_delta, y_delta)
